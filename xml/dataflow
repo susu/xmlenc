@@ -1,0 +1,24 @@
+===============================================================================
+ENCODING DATAFLOW:
+===============================================================================
+
+                           gen symkey (16 byte)
+                                  \
+Source plaintext -> base64 -> AES-128 eencryption -> cipherData(XML)
+                                /
+                     gen IV (base64) (added as plaintext)
+
+symkey encryption -> RSA encryption -> base64 -> XML???
+
+
+===============================================================================
+DECODING DATAFLOW:
+===============================================================================
+
+XML??? -> base64 decode -> RSA decryption -> symkey
+
+                  decoded symkey
+                       \
+cipherData(XML) -> AES-128 decryption -> original plaintext message
+                       /
+                  IV (base64 decode)

@@ -1,0 +1,34 @@
+<complexType name='EncryptedType' abstract='true'>
+    <sequence>
+      USED <element ref='ds:KeyInfo' minOccurs='0'/>
+      USED <element ref='xenc:CipherData'/>
+      NOT USED <element ref='xenc:EncryptionProperties' minOccurs='0'/>
+    </sequence>
+    NOT USED <attribute name='Id' type='ID' use='optional'/>
+    NOT USED <attribute name='Type' type='anyURI' use='optional'/>
+    NOT USED <attribute name='MimeType' type='string' use='optional'/>
+    <attribute name='Encoding' type='anyURI' use='optional'/> 
+   </complexType>
+
+
+
+
+
+A titkositott XML file root eleme az EncryptedData lesz.
+
+
+Az EcryptedType absztrakt tipus, amiből az EncryptedData
+es az EncryptedKey elem szarmaztathato.
+
+
+EXAMPLE:
+
+<EncryptedData ...>
+  <KeyInfo>
+    <EncryptedKey ... Recipient="a">...</EncryptedKey>
+    <EncryptedKey ... Recipient="b">...</EncryptedKey>
+    <EncryptedKey ... Recipient="c">...</EncryptedKey>
+  </KeyInfo>
+  ....
+</EncryptedData>
+
