@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EncryptedData type="http://www.w3.org/2001/04/xmlenc#Element">
+  <KeyInfo>
+    <EncryptedKey Recipient="masodik_csapat">titkossag2</EncryptedKey>
+    <EncryptedKey Recipient="elso_csapat">titkossag</EncryptedKey>
+    <EncryptedKey Recipient="harmadik_csapat">titkossag3</EncryptedKey>
+  </KeyInfo>
+  <CipherData>
+    <CipherValue>hellothere</CipherValue>
+  </CipherData>
+</EncryptedData></KeyInfo>

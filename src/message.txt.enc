@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EncryptedData type="http://www.w3.org/2001/04/xmlenc#Element">
+  <KeyInfo>
+    <EncryptedKey Recipient="susu">eu2mMj5RzzjnZru2I6zkYZvBGolFGhbqAiCyj6wQ3eHHuuhMfgoJKxjy59/Hmda0KaHpauFT6mps
+/w9LsQ0LPGl3spCuFm9mJoNkomfZiUyXO7BwkzDXaIHhK5cCXoLx6nlytoMpavK94i7Tcs3YYGsr
+o/Jog8yCyuaw0eExfmW+yKVpvWk99TPcrh+J4afH
+</EncryptedKey>
+  </KeyInfo>
+  <CipherData>
+    <CipherValue>/osFSDt8DD/EbughZeZGTZjtFDoP2yAZsEzueZlsufSfQ5OojBfeDxZlGV4Hmtc=
+</CipherValue>
+  </CipherData>
+</EncryptedData></KeyInfo>

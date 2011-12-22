@@ -2,13 +2,13 @@
 ENCODING DATAFLOW:
 ===============================================================================
 
-                           gen symkey (16 byte)
-                                  \
-Source plaintext -> base64 -> AES-128 eencryption -> cipherData(XML)
-                                /
-                     gen IV (base64) (added as plaintext)
+               gen symkey (16 byte)
+                      \
+Source plaintext -> AES-128 eencryption -> base64 -> cipherData(XML)
+                      /
+           gen IV (added as plaintext)
 
-symkey encryption -> RSA encryption -> base64 -> XML???
+symkey encryption -> RSA encryption -> base64 -> XML:KeyInfo
 
 
 ===============================================================================
