@@ -36,6 +36,7 @@ sub encrypt
     else
     {
       my $CN = CliWrapper::get_CN_from_cert( $cert );
+      #my $CN = "lehel";
       
       my $encrypted_symkey = $initial_value . CliWrapper::rsa_encrypt($cert, $symmetric_key);
 
